@@ -13,7 +13,7 @@ function MainInfo({ mainInfo }) {
                 <h2>{mainInfo.roleTitle}</h2>
             </div>
             <div>
-                <h2>{mainInfo.locale}</h2>
+                <Text>{mainInfo.locale}</Text>
             </div>
             <div>
                 <Text>{mainInfo.website}</Text>

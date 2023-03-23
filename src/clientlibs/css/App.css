@@ -193,6 +193,16 @@ nav {
         grid-template-columns: repeat(2, auto);
     }
 }
+
+@media screen and (max-width: 475px) {
+    .tech-skills {
+        text-align: center;
+    }
+    .tech-skills-grid {
+        grid-template-columns: repeat(1, auto);
+        text-align: center;
+    }
+}
 /* RESUME STYLES END */
 
 /* ABOUT STYLES */
