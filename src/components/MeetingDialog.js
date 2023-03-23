@@ -8,7 +8,6 @@ import {
     ActionButton,
     ButtonGroup,
     Button,
-    Well,
 } from '@adobe/react-spectrum';
 
 import { meetingData } from "../api/meetingData";

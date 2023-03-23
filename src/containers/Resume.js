@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Button, Link, Well } from '@adobe/react-spectrum';
+import { Text, Button, Link } from '@adobe/react-spectrum';
 import { useSpring, animated } from '@react-spring/web'
 import { resume } from '../api/resume';
 
