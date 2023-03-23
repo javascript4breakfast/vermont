@@ -33,7 +33,6 @@ nav {
 }
 .nav-controls {
     display: flex;
-    margin-right: 16px;
 }
 .nav-control-btn {
     margin: 0 8px;
@@ -99,12 +98,18 @@ nav {
 }
 .meeting-links {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-gap: 16px;
 }
 .meeting-links div {
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (max-width: 500px) {
+    .landing-detail {
+        max-width: 90vw;
+    }
 }
 /* LANDING STYLES END */
 

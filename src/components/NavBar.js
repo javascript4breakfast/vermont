@@ -105,12 +105,12 @@ export default function NavBar() {
                 </div>
                 <div className='nav-links-mobile'>
                     <div className='nav-links-mobile-btn'>
-                        <ActionButton onPress={toggleScale}>
+                        <ActionButton isQuiet onPress={toggleScale}>
                             {scale === 'large' ? <CgArrowDownO /> : <CgArrowUpO />}
                         </ActionButton>
                     </div>
                     <div className='nav-links-mobile-btn'>
-                        <ActionButton onPress={toggleTheme}>
+                        <ActionButton isQuiet onPress={toggleTheme}>
                             {theme === 'dark' ? <CgMoon /> : <CgSun />}
                         </ActionButton>
                     </div>
