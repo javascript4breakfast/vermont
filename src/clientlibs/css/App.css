@@ -194,3 +194,20 @@ nav {
     }
 }
 /* RESUME STYLES END */
+
+/* ABOUT STYLES */
+.under-construction {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 3.7em);
+}
+.under-construction-item {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.cone {
+    color: orange;
+    margin-bottom: -40px;
+}
+/* ABOUT STYLES END */
