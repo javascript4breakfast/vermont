@@ -19,7 +19,7 @@ export default function Landing() {
                         </h1>
                     </div>
                     <div>
-                        <h4>Jonathan Ortiz - Sr. Frontend Software Engineer</h4>
+                        <h4>Jonathan Ortiz - Sr. Frontend Engineer</h4>
                     </div>
                 </div>
                 <div className='landing-detail'>

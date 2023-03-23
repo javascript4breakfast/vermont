@@ -84,12 +84,11 @@ nav {
 }
 .landing-detail p {
     text-align: center;
-    margin: 16px;
-    font-size: 1.333em;
 }
 .landing-btn {
     display: flex;
-    justify-content: center
+    justify-content: center;
+    margin-top: 16px;
 }
 .landing-footer {
     min-height: 4rem;

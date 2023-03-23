@@ -5,7 +5,7 @@ import { MdBusiness } from 'react-icons/md';
 export const resume = {
     mainInfo: {
         name: 'Jonathan Ortiz',
-        roleTitle: 'Sr. Front End Software Engineer',
+        roleTitle: 'Sr. Front End Engineer',
         locale: 'San Francisco, California',
         email: 'jonathan@javascript4breakfast.com',
         linkedIn: 'www.linkedin.com/in/jonathanortiz31',
