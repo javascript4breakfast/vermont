@@ -1,0 +1,192 @@
+/* NAV STYLES */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    min-height: 4rem;
+    box-shadow: 1px 0 1px 1px rgba(225, 225, 225, 0.5);
+}
+.nav-links {
+    display: flex;
+    min-width: 10rem;
+    justify-content: space-between;
+}
+.nav-links-mobile {
+    display: none;
+}
+.nav-links-mobile-items {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+    box-shadow: 1px 0 1px 1px rgba(225, 225, 225, 0.5);
+}
+.nav-links-mobile-item {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 16px;
+}
+.link-btn {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+}
+.nav-controls {
+    display: flex;
+    margin-right: 16px;
+}
+.nav-control-btn {
+    margin: 0 8px;
+}
+.nav-links-mobile-btn {
+    margin-left: 8px;
+}
+@media screen and (max-width: 675px) {
+    .nav-links {
+        display: none;
+    }
+    .nav-links-mobile {
+        display: flex;
+    }
+}
+/* NAV STYLES END */
+
+/* LANDING STYLES */
+.landing-wrapper {
+    min-height: calc(100vh - 8rem);
+    display: grid;
+    grid-gap: 0.333rem;
+    justify-content: center;
+    align-content: center;
+}
+.img-cropper {
+    max-height: 9em;
+    max-width: 9em;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.landing-img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+.landing-title h1, h4 {
+    text-align: center;
+    margin: 0;
+}
+.landing-detail {
+    max-width: 80vw;
+}
+.landing-detail p {
+    text-align: center;
+    margin: 16px;
+    font-size: 1.333em;
+}
+.landing-btn {
+    display: flex;
+    justify-content: center
+}
+.landing-footer {
+    min-height: 4rem;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.meeting-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+}
+.meeting-links div {
+    display: flex;
+    flex-direction: column;
+}
+/* LANDING STYLES END */
+
+/* RESUME STYLES */
+.main-info {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-info h1, h2, h3 {
+    margin: 0;
+}
+.tech-summary-items {
+    max-width: 90vw;
+    margin: 40px auto;
+}
+.tech-summary-title, .tech-summary-desc {
+    text-align: center;
+}
+.journey-wrapper {
+    max-width: 90vw;
+    margin: 8px auto;
+}
+.journey-item {
+    margin: 16px auto;
+}
+.journey-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.job-title, .journey-details {
+    margin-left: 8px;
+}
+.journey-title {
+    text-align: center;
+}
+.journey-details h4 {
+    margin-right: 8px;
+    font-size: 1.8em;
+}
+.journey-details h3 {
+    margin-right: 8px;
+    padding-top: 4px;
+    font-size: 1.5em;
+}
+.journey-details p {
+    font-size: 1em;
+    padding-top: 4px;
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 16px;
+}
+.journey-details h3, h4, p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.journey-desc-items {
+    margin: 8px 0;
+}
+.tech-skills {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+.tech-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    margin: 16px auto;
+}
+.skills-grid-item {
+    font-size: 1.333em;
+}
+.download-pdf {
+    display: flex;
+    justify-content: center;
+    padding: 48px 0;
+}
+@media screen and (max-width: 675px) {
+    .tech-skills-grid {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+/* RESUME STYLES END */

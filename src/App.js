@@ -1,50 +1,27 @@
-import React, { Component } from "react"
-import logo from "./logo.svg"
-import "./App.css"
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import { defaultTheme, Provider as SpectrumProvider } from '@adobe/react-spectrum';
+import { AppContext } from './context';
+import NavBar from './components/NavBar';
+import Pages from './containers/Pages';
+import './clientlibs/css/App.css';
 
-class LambdaDemo extends Component {
-  constructor(props) {
-    super(props)
-    this.state = { loading: false, msg: null }
-  }
-
-  handleClick = api => e => {
-    e.preventDefault()
-
-    this.setState({ loading: true })
-    fetch("/.netlify/functions/" + api)
-      .then(response => response.json())
-      .then(json => this.setState({ loading: false, msg: json.msg }))
-  }
-
-  render() {
-    const { loading, msg } = this.state
-
+function AppGrid() {
     return (
-      <p>
-        <button onClick={this.handleClick("hello")}>{loading ? "Loading..." : "Call Lambda"}</button>
-        <button onClick={this.handleClick("async-dadjoke")}>{loading ? "Loading..." : "Call Async Lambda"}</button>
-        <br />
-        <span>{msg}</span>
-      </p>
-    )
-  }
+        <BrowserRouter>
+            <NavBar />
+            <Pages />
+        </BrowserRouter>
+    );
 }
 
-class App extends Component {
-  render() {
+function App() {
+    const [state] = React.useContext(AppContext);
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <LambdaDemo />
-        </header>
-      </div>
-    )
-  }
+        <SpectrumProvider theme={defaultTheme} scale={state.scale} colorScheme={state.theme}>
+             <AppGrid />
+        </SpectrumProvider>
+    );
 }
 
-export default App
+export default App;
