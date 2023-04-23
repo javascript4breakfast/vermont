@@ -2,6 +2,7 @@ import React from 'react';
 import { Text, Button, Link } from '@adobe/react-spectrum';
 import { useSpring, animated } from '@react-spring/web'
 import { resume } from '../api/resume';
+import ResumeDialog from '../components/ResumeDialog';
 
 function MainInfo({ mainInfo }) {
     return (
@@ -133,15 +134,7 @@ export default function Resume() {
             <TechSummary techSummary={techSummary} />
             <Journey journey={journey} />
             <TechnicalSkills techSkills={techSkills} />
-            <DownloadAsPdf />
+            <ResumeDialog />
         </animated.div>
-    );
-}
-
-function DownloadAsPdf() {
-    return (
-        <div className='download-pdf'>
-            <Button variant='cta'>Download PDF</Button>
-        </div>
     );
 }

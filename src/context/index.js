@@ -4,7 +4,8 @@ export const AppContext = React.createContext([{}, () => {}]);
 const initialState = {
     theme:  localStorage.getItem('appTheme') || 'dark',
     scale:  localStorage.getItem('appScale') || 'medium',
-}
+};
+
 export default function AppContextProvider(props) {
     const [state, setState] = React.useState({ ...initialState });
 

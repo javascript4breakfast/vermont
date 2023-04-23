@@ -98,7 +98,7 @@ nav {
 }
 .meeting-links {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 16px;
 }
 .meeting-links div {
@@ -109,6 +109,15 @@ nav {
 @media screen and (max-width: 500px) {
     .landing-detail {
         max-width: 90vw;
+    }
+    .meeting-links {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 8px;
+    }
+    .meeting-links div {
+        display: flex;
+        flex-direction: column;
     }
 }
 /* LANDING STYLES END */
@@ -183,10 +192,37 @@ nav {
 .skills-grid-item {
     font-size: 1.333em;
 }
-.download-pdf {
+.download-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+}
+.exam-grid {
+    display: grid;
+    grid-gap: 8px;
+}
+.exam-button {
+    margin-top: 16px;
+}
+.exam-title {
+    font-size: 1.333em;
+}
+.incorrect-msg {
+    color: red;
+    font-size: 1.333em;
+}
+.flex-center {
     display: flex;
     justify-content: center;
-    padding: 48px 0;
+}
+.radio-group-section {
+    display: flex;
+    justify-content: center;
+}
+.icon-large {
+    font-size: 3em;
 }
 @media screen and (max-width: 675px) {
     .tech-skills-grid {
@@ -218,6 +254,7 @@ nav {
 }
 .cone {
     color: orange;
+    font-size: 2em;
     margin-bottom: -40px;
 }
 /* ABOUT STYLES END */

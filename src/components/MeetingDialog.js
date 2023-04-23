@@ -39,7 +39,7 @@ export default function MeetingDialog() {
                         </div>
                     </Content>
                     <ButtonGroup>
-                        <Button variant="accent" onPress={close} autoFocus>Cool</Button>
+                        <Button variant="accent" onPress={close} autoFocus>Close</Button>
                     </ButtonGroup>
                 </Dialog>
             )}

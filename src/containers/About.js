@@ -1,12 +1,12 @@
 import React from 'react';
-import { BsConeStriped } from 'react-icons/bs';
+import { FcVlc } from 'react-icons/fc';
 
-export default function About() {
+function UnderConstruction() {
     return (
         <div className='under-construction'>
             <div className='under-construction-item'>
                 <h1>
-                    <BsConeStriped className='cone' />
+                    <FcVlc/>
                 </h1>
             </div>
             <div className='under-construction-item'>
@@ -16,5 +16,9 @@ export default function About() {
                 <h2>Please check back later...</h2>
             </div>
         </div>
-    )
+    );
+}
+
+export default function About() {
+    return <UnderConstruction />
 }
